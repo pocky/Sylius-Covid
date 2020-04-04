@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dd655d20eb4192ea97496c3d979730f",
+    "content-hash": "47dd04802413278e2dc5a754a5c686dd",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -5430,6 +5430,84 @@
             ],
             "description": "Symfony EventDispatcher Polyfill",
             "time": "2020-01-31T14:21:00+00:00"
+        },
+        {
+            "name": "sylius/customer-order-cancellation-plugin",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Sylius/CustomerOrderCancellationPlugin.git",
+                "reference": "82823648e6c1667161fc0b472768aa8b4691c0d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Sylius/CustomerOrderCancellationPlugin/zipball/82823648e6c1667161fc0b472768aa8b4691c0d2",
+                "reference": "82823648e6c1667161fc0b472768aa8b4691c0d2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "sylius/sylius": "^1.4"
+            },
+            "require-dev": {
+                "behat/behat": "^3.4",
+                "behat/mink": "^1.7@dev",
+                "behat/mink-browserkit-driver": "^1.3",
+                "behat/mink-extension": "^2.2",
+                "behat/mink-selenium2-driver": "^1.3",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/symfony-extension": "^2.0",
+                "friends-of-behat/variadic-extension": "^1.1",
+                "lakion/mink-debug-extension": "^1.2.3",
+                "phpspec/phpspec": "^5.0",
+                "phpstan/phpstan-doctrine": "^0.11",
+                "phpstan/phpstan-shim": "^0.11",
+                "phpstan/phpstan-webmozart-assert": "^0.11",
+                "phpunit/phpunit": "^6.5",
+                "sylius-labs/coding-standard": "^3.0",
+                "symfony/browser-kit": "^3.4|^4.1",
+                "symfony/debug-bundle": "^3.4|^4.1",
+                "symfony/dotenv": "^4.2",
+                "symfony/intl": "^3.4|^4.1",
+                "symfony/web-profiler-bundle": "^3.4|^4.1",
+                "symfony/web-server-bundle": "^3.4|^4.1"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sylius\\CustomerOrderCancellationPlugin\\": "src/",
+                    "Tests\\Sylius\\CustomerOrderCancellationPlugin\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kamil Kokot",
+                    "email": "kamil@kokot.me",
+                    "homepage": "http://kamil.kokot.me"
+                },
+                {
+                    "name": "Bartosz Pietrzak",
+                    "homepage": "https://github.com/bartoszpietrzak1994"
+                }
+            ],
+            "description": "Plugin that allows customers to cancel the placed order before it is processed.",
+            "keywords": [
+                "customer order cancellation",
+                "e-commerce",
+                "sylius",
+                "sylius-plugin",
+                "symfony"
+            ],
+            "time": "2019-02-06T12:04:15+00:00"
         },
         {
             "name": "sylius/fixtures-bundle",
@@ -14135,12 +14213,12 @@
             "version": "v7.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Symplify/CodingStandard.git",
+                "url": "https://github.com/symplify/coding-standard.git",
                 "reference": "864af829cd9007f3c11d778485082ef0056a1486"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symplify/CodingStandard/zipball/864af829cd9007f3c11d778485082ef0056a1486",
+                "url": "https://api.github.com/repos/symplify/coding-standard/zipball/864af829cd9007f3c11d778485082ef0056a1486",
                 "reference": "864af829cd9007f3c11d778485082ef0056a1486",
                 "shasum": ""
             },
@@ -14184,12 +14262,12 @@
             "version": "v7.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Symplify/EasyCodingStandard.git",
+                "url": "https://github.com/symplify/easy-coding-standard.git",
                 "reference": "d9f483bb42f9c8c169bedd67b5a57663d163163a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symplify/EasyCodingStandard/zipball/d9f483bb42f9c8c169bedd67b5a57663d163163a",
+                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/d9f483bb42f9c8c169bedd67b5a57663d163163a",
                 "reference": "d9f483bb42f9c8c169bedd67b5a57663d163163a",
                 "shasum": ""
             },
@@ -14250,12 +14328,12 @@
             "version": "v7.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Symplify/PackageBuilder.git",
+                "url": "https://github.com/symplify/package-builder.git",
                 "reference": "6d328c576472bbbb54f8fa50d127cf627e1680d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symplify/PackageBuilder/zipball/6d328c576472bbbb54f8fa50d127cf627e1680d5",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/6d328c576472bbbb54f8fa50d127cf627e1680d5",
                 "reference": "6d328c576472bbbb54f8fa50d127cf627e1680d5",
                 "shasum": ""
             },
@@ -14296,12 +14374,12 @@
             "version": "v7.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Symplify/SetConfigResolver.git",
+                "url": "https://github.com/symplify/set-config-resolver.git",
                 "reference": "bf63e985dcf88d7651026d062edd314280715da9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symplify/SetConfigResolver/zipball/bf63e985dcf88d7651026d062edd314280715da9",
+                "url": "https://api.github.com/repos/symplify/set-config-resolver/zipball/bf63e985dcf88d7651026d062edd314280715da9",
                 "reference": "bf63e985dcf88d7651026d062edd314280715da9",
                 "shasum": ""
             },
@@ -14339,12 +14417,12 @@
             "version": "v7.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Symplify/SmartFileSystem.git",
+                "url": "https://github.com/symplify/smart-file-system.git",
                 "reference": "aec493bf2d935cd71cec68dbcc299e415ecc2c20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Symplify/SmartFileSystem/zipball/aec493bf2d935cd71cec68dbcc299e415ecc2c20",
+                "url": "https://api.github.com/repos/symplify/smart-file-system/zipball/aec493bf2d935cd71cec68dbcc299e415ecc2c20",
                 "reference": "aec493bf2d935cd71cec68dbcc299e415ecc2c20",
                 "shasum": ""
             },

@@ -56,4 +56,5 @@ return [
     FriendsOfBehat\SymfonyExtension\Bundle\FriendsOfBehatSymfonyExtensionBundle::class => ['test' => true, 'test_cached' => true],
     Sylius\Behat\Application\SyliusTestPlugin\SyliusTestPlugin::class => ['test' => true, 'test_cached' => true],
     SitemapPlugin\SitemapPlugin::class => ['all' => true],
+    Sylius\CustomerOrderCancellationPlugin\SyliusCustomerOrderCancellationPlugin::class => ['all' => true],
 ];

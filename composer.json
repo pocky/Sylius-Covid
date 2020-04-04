@@ -19,6 +19,7 @@
     "require": {
         "php": "^7.3",
         "stefandoorn/sitemap-plugin": "^1.1",
+        "sylius/customer-order-cancellation-plugin": "^1.1",
         "sylius/sylius": "~1.7.0@rc",
         "symfony/dotenv": "^4.4",
         "symfony/flex": "^1.2"
@@ -88,7 +89,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false
+            "allow-contrib": true
         },
         "branch-alias": {
             "dev-master": "1.7-dev"
