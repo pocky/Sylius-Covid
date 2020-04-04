@@ -58,4 +58,5 @@ return [
     SitemapPlugin\SitemapPlugin::class => ['all' => true],
     Sylius\CustomerOrderCancellationPlugin\SyliusCustomerOrderCancellationPlugin::class => ['all' => true],
     Sylius\CustomerReorderPlugin\SyliusCustomerReorderPlugin::class => ['all' => true],
+    CoopTilleuls\SyliusClickNCollectPlugin\CoopTilleulsSyliusClickNCollectPlugin::class => ['all' => true],
 ];
