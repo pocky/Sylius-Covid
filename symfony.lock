@@ -143,6 +143,9 @@
             "ref": "81dee417d2cc60cd1c9d6208dff2ec22a1103e93"
         }
     },
+    "friendsofsylius/sylius-import-export-plugin": {
+        "version": "0.17.0"
+    },
     "friendsofsymfony/oauth-server-bundle": {
         "version": "1.6.1"
     },
@@ -266,6 +269,12 @@
             "ref": "7f6676627c1ceeeee204553d24a0545d5f918b7b"
         }
     },
+    "markbaker/complex": {
+        "version": "1.4.8"
+    },
+    "markbaker/matrix": {
+        "version": "1.2.0"
+    },
     "matthiasnoback/symfony-config-test": {
         "version": "3.1.1"
     },
@@ -377,6 +386,9 @@
     "phpdocumentor/type-resolver": {
         "version": "0.4.0"
     },
+    "phpoffice/phpspreadsheet": {
+        "version": "1.11.0"
+    },
     "phpoption/phpoption": {
         "version": "1.5.0"
     },
@@ -434,6 +446,15 @@
     "polishsymfonycommunity/symfony-mocker-container": {
         "version": "v1.0.2"
     },
+    "portphp/csv": {
+        "version": "1.1.0"
+    },
+    "portphp/portphp": {
+        "version": "1.4.0"
+    },
+    "portphp/spreadsheet": {
+        "version": "1.0.1"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -451,6 +472,9 @@
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+    },
+    "queue-interop/queue-interop": {
+        "version": "0.6.2"
     },
     "ralouphie/getallheaders": {
         "version": "2.0.5"

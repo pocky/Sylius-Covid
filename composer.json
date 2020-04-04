@@ -18,6 +18,9 @@
     ],
     "require": {
         "php": "^7.4",
+        "friendsofsylius/sylius-import-export-plugin": "^0.17.0",
+        "portphp/csv": "^1.1",
+        "portphp/spreadsheet": "^1.0",
         "stefandoorn/sitemap-plugin": "^1.1",
         "sylius/customer-order-cancellation-plugin": "^1.1",
         "sylius/customer-reorder-plugin": "^1.1",
