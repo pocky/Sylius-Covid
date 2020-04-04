@@ -57,4 +57,5 @@ return [
     Sylius\Behat\Application\SyliusTestPlugin\SyliusTestPlugin::class => ['test' => true, 'test_cached' => true],
     SitemapPlugin\SitemapPlugin::class => ['all' => true],
     Sylius\CustomerOrderCancellationPlugin\SyliusCustomerOrderCancellationPlugin::class => ['all' => true],
+    Sylius\CustomerReorderPlugin\SyliusCustomerReorderPlugin::class => ['all' => true],
 ];
