@@ -518,6 +518,9 @@
     "squizlabs/php_codesniffer": {
         "version": "3.3.1"
     },
+    "stefandoorn/sitemap-plugin": {
+        "version": "v1.1.1"
+    },
     "stof/doctrine-extensions-bundle": {
         "version": "1.2",
         "recipe": {
