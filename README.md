@@ -4,9 +4,20 @@
     </a>
 </p>
 
-<h1 align="center">Sylius Standard Edition</h1>
+<h1 align="center">Sylius Covid Edition</h1>
 
-<p align="center">This is Sylius Standard Edition repository for starting new projects.</p>
+<p align="center">This is Sylius Covid Edition repository for starting new projects.</p>
+
+
+Work In Progress!
+___
+
+Curent Plugins:
+- Sitemap Plugin: https://sylius.com/plugin/google-sitemaps/
+- Customer Reorder Plugin: https://sylius.com/plugin/customer-reorder-plugin/
+- Customer Order Cancellation Plugin: https://sylius.com/plugin/customer-order-cancellation-plugin/
+- Click 'N' Collect : https://click-n-collect.shop/ (AGPL License)
+- Import Export Plugin : https://sylius.com/plugin/import-export/
 
 About
 -----
