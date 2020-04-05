@@ -9,6 +9,42 @@ imports:
 parameters:
     sylius_core.public_dir: '%kernel.project_dir%/public'
 
+sylius_ui:
+    events:
+        sylius.shop.homepage:
+            blocks:
+                banner:
+                    enabled: false
+                latest_products:
+                    template: "@SyliusShop/Homepage/_latestProducts.html.twig"
+                    priority: 50
+                latest_products_carousel:
+                    enabled: false
+                newsletter:
+                    enabled: false
+                products_grid:
+                    enabled: false
+                about_us:
+                    enabled: false
+        sylius.shop.layout.footer.grid:
+            blocks:
+                before_legacy:
+                    template: "@SyliusUi/Block/_legacySonataEvent.html.twig"
+                    priority: 45
+                    context:
+                        event: sylius.shop.layout.before_footer
+                plus:
+                    template: "@SyliusShop/Layout/Footer/Grid/_logo.html.twig"
+                    priority: 40
+                your_store:
+                    template: "@SyliusShop/Layout/Footer/Grid/_your_store.html.twig"
+                    priority: 30
+                customer_care:
+                    template: "@SyliusShop/Layout/Footer/Grid/_customer_care.html.twig"
+                    priority: 20
+                payment_methods:
+                    enabled: false
+            
 sylius_addressing:
     resources:
         address:

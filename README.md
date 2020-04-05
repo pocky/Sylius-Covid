@@ -10,7 +10,7 @@
 
 
 Work In Progress!
-___
+-----------------
 
 Curent Plugins:
 - Sitemap Plugin: https://sylius.com/plugin/google-sitemaps/
@@ -18,6 +18,13 @@ Curent Plugins:
 - Customer Order Cancellation Plugin: https://sylius.com/plugin/customer-order-cancellation-plugin/
 - Click 'N' Collect : https://click-n-collect.shop/ (AGPL License)
 - Import Export Plugin : https://sylius.com/plugin/import-export/
+
+Pimp it!
+--------
+
+__Logo__: Updates defaults logo in `assets/shop/img` directory and run `yarn encore production`
+
+# Sylius README
 
 About
 -----
