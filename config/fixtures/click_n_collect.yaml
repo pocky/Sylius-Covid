@@ -1,0 +1,54 @@
+sylius_fixtures:
+    suites:
+        covid:
+            fixtures:
+                locale:
+                    priority: 60
+                currency:
+                    priority: 50
+                geographical:
+                    priority: 40
+                channel:
+                    priority: 30
+                click_n_collect_shipping_method:
+                    priority: 20
+                    name: shipping_method
+                    options:
+                        custom:
+                            click_n_collect:
+                                code: click_n_collect
+                                name: Click 'N' Collect
+                                enabled: true
+                                channels: [FASHION_WEB]
+                                zone: FR
+                                calculator:
+                                    type: flat_rate
+                                    configuration:
+                                        FASHION_WEB:
+                                            amount: 0
+                location:
+                    priority: 10
+                    options:
+                        custom:
+                            - name: Lille
+                              code: lille
+                              street: 82 Rue Winston Churchill
+                              city: Lomme
+                              postcode: '59160'
+                              country_code: FR
+                              rrule: FREQ=MINUTELY;INTERVAL=20;BYHOUR=9,10,11,12,13,14,15,16;BYDAY=MO,TU,WE,TH,FR;DTSTART=20200328T080000;DTEND=20200328T082000
+                              order_preparation_delay: 20
+                              throughput: 2
+                              generate_pin: false
+                              shipping_methods: [click_n_collect]
+                            - name: Paris
+                              code: paris
+                              street: 2 Rue Dieu
+                              city: Paris
+                              postcode: '75100'
+                              country_code: FR
+                              rrule: FREQ=MINUTELY;INTERVAL=30;BYHOUR=10,11,12,15,16;BYDAY=TU,WE,TH,FR;DTSTART=20200328T080000;DTEND=20200328T082000
+                              order_preparation_delay: 30
+                              throughput: 1
+                              generate_pin: true
+                              shipping_methods: [click_n_collect]

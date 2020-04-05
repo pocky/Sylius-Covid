@@ -1,0 +1,7 @@
+imports:
+    - { resource: '../fixtures/shop_configuration.yaml' }
+    - { resource: '../fixtures/products.yaml' }
+    - { resource: '../fixtures/click_n_collect.yaml' }
+
+parameters:
+    env(SYLIUS_FIXTURES_HOSTNAME): 'localhost'

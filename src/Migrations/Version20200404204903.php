@@ -30,7 +30,6 @@ final class Version20200404204903 extends AbstractMigration
         $this->addSql('ALTER TABLE sylius_shipment ADD CONSTRAINT FK_FD707B3364D218E FOREIGN KEY (location_id) REFERENCES coop_tilleuls_click_n_collect_location (id)');
         $this->addSql('CREATE INDEX IDX_FD707B3364D218E ON sylius_shipment (location_id)');
         $this->addSql('CREATE INDEX IDX_FD707B3364D218E25E3B4AB ON sylius_shipment (location_id, collection_time)');
-
     }
 
     public function down(Schema $schema) : void

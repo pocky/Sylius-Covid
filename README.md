@@ -26,6 +26,11 @@ __Logo__: Updates defaults logo in `assets/shop/img` directory and run `yarn enc
 
 # Sylius README
 
+First Run
+---------
+
+Run `bin/console sylius:install --fixture-suite=covid`
+
 About
 -----
 
