@@ -10,6 +10,9 @@ Encore
   .setOutputPath('public/build/shop/')
   .setPublicPath('/build/shop')
   .addEntry('shop-entry', './assets/shop/entry.js')
+  .copyFiles({
+    from: './assets/shop/img',
+  })
   .disableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
   .enableSourceMaps(!Encore.isProduction())

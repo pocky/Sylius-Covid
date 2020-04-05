@@ -1,3 +1,7 @@
 sylius_customer_reorder_plugin:
     ui:
         reorder: Repasser la commande
+
+sylius:
+    ui:
+        our_products: Nos produits
