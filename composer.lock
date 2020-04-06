@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "646e8304d48fbf703386769884fa27f6",
+    "content-hash": "f1286269a3205985715a795013342edf",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1464,22 +1464,22 @@
         },
         {
             "name": "friendsofsylius/sylius-import-export-plugin",
-            "version": "0.17.0",
+            "version": "0.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSylius/SyliusImportExportPlugin.git",
-                "reference": "0557db82a609c72357de22aebc1210fd0043a10f"
+                "reference": "945a24156ce0fd0065c59c7ec0f934ced9940e3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSylius/SyliusImportExportPlugin/zipball/0557db82a609c72357de22aebc1210fd0043a10f",
-                "reference": "0557db82a609c72357de22aebc1210fd0043a10f",
+                "url": "https://api.github.com/repos/FriendsOfSylius/SyliusImportExportPlugin/zipball/945a24156ce0fd0065c59c7ec0f934ced9940e3d",
+                "reference": "945a24156ce0fd0065c59c7ec0f934ced9940e3d",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2",
                 "portphp/portphp": "^1.2",
-                "queue-interop/queue-interop": "^0.6.2",
+                "queue-interop/queue-interop": "^0.6.2|^0.7|^0.8",
                 "sylius/sylius": "^1.4",
                 "symfony/stopwatch": "^3.3 | ^4.1"
             },
@@ -1545,7 +1545,7 @@
                 "MIT"
             ],
             "description": "import / export plugin for Sylius.",
-            "time": "2019-07-26T07:11:38+00:00"
+            "time": "2020-04-06T16:33:33+00:00"
         },
         {
             "name": "friendsofsymfony/oauth-server-bundle",
