@@ -12,7 +12,7 @@
 Work In Progress!
 -----------------
 
-Curent Plugins:
+Current Plugins:
 - Sitemap Plugin: https://sylius.com/plugin/google-sitemaps/
 - Customer Reorder Plugin: https://sylius.com/plugin/customer-reorder-plugin/
 - Customer Order Cancellation Plugin: https://sylius.com/plugin/customer-order-cancellation-plugin/
