@@ -443,6 +443,12 @@
             "ref": "c276fa48d4713de91eb410289b3b1834acb7e403"
         }
     },
+    "platformsh/config-reader": {
+        "version": "2.3.1"
+    },
+    "platformsh/symfonyflex-bridge": {
+        "version": "2.2.0"
+    },
     "polishsymfonycommunity/symfony-mocker-container": {
         "version": "v1.0.2"
     },
