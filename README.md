@@ -19,17 +19,17 @@ Current Plugins:
 - Click 'N' Collect : https://click-n-collect.shop/ (AGPL License)
 - Import Export Plugin : https://sylius.com/plugin/import-export/
 
+First Run
+---------
+
+Run `bin/console sylius:install --fixture-suite=covid`
+
 Pimp it!
 --------
 
 __Logo__: Updates defaults logo in `assets/shop/img` directory and run `yarn encore production`
 
 # Sylius README
-
-First Run
----------
-
-Run `bin/console sylius:install --fixture-suite=covid`
 
 About
 -----
