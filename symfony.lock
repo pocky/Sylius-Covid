@@ -732,6 +732,18 @@
     "symfony/lock": {
         "version": "v5.0.7"
     },
+    "symfony/mailer": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "15658c2a0176cda2e7dba66276a2030b52bd81b2"
+        },
+        "files": [
+            "config/packages/mailer.yaml"
+        ]
+    },
     "symfony/mime": {
         "version": "v4.3.1"
     },
@@ -914,6 +926,9 @@
     },
     "twig/twig": {
         "version": "v2.5.0"
+    },
+    "vanoix/sylius-mailer-plugin": {
+        "version": "1.0-dev"
     },
     "webimpress/safe-writer": {
         "version": "2.0.1"
