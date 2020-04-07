@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1286269a3205985715a795013342edf",
+    "content-hash": "c08fa69c7c695cae70d1bbd6380d0b1a",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -10693,6 +10693,69 @@
             "time": "2020-02-11T15:31:23+00:00"
         },
         {
+            "name": "vanoix/sylius-customer-support-plugin",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./plugins/VanoixSyliusCustomerSupportPlugin",
+                "reference": "693d449956056049d8a43877162ceeb98ed873c8"
+            },
+            "require": {
+                "php": "^7.3",
+                "sylius/sylius": "^1.7"
+            },
+            "require-dev": {
+                "behat/behat": "^3.4",
+                "behat/mink": "^1.7@dev",
+                "behat/mink-browserkit-driver": "^1.3",
+                "behat/mink-extension": "^2.2",
+                "behat/mink-selenium2-driver": "^1.3",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/suite-settings-extension": "^1.0",
+                "friends-of-behat/symfony-extension": "^2.0",
+                "friends-of-behat/variadic-extension": "^1.1",
+                "lakion/mink-debug-extension": "^1.2.3",
+                "phpspec/phpspec": "^5.0",
+                "phpstan/phpstan-doctrine": "^0.11",
+                "phpstan/phpstan-shim": "^0.11",
+                "phpstan/phpstan-webmozart-assert": "^0.11",
+                "phpunit/phpunit": "^8.0",
+                "sensiolabs/security-checker": "^5.0",
+                "sylius-labs/coding-standard": "^3.0",
+                "symfony/browser-kit": "^3.4|^4.3",
+                "symfony/debug-bundle": "^3.4|^4.3",
+                "symfony/dotenv": "^4.3",
+                "symfony/intl": "^3.4|^4.3",
+                "symfony/web-profiler-bundle": "^3.4|^4.3",
+                "symfony/web-server-bundle": "^3.4|^4.3"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vanoix\\SyliusCustomerSupportPlugin\\": "src/",
+                    "Tests\\Vanoix\\SyliusCustomerSupportPlugin\\": "tests/"
+                }
+            },
+            "autoload-dev": {
+                "classmap": [
+                    "tests/Application/Kernel.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Customer support for your shop",
+            "keywords": [
+                "sylius",
+                "sylius-plugin"
+            ]
+        },
+        {
             "name": "webimpress/safe-writer",
             "version": "2.0.1",
             "source": {
@@ -15574,7 +15637,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "sylius/sylius": 5
+        "sylius/sylius": 5,
+        "vanoix/sylius-customer-support-plugin": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

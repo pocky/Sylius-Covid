@@ -1,0 +1,15 @@
+vanoix_sylius_customer_support_admin_support:
+    resource: |
+        alias: vanoix_customer_support.support
+        section: admin
+        templates: SyliusAdminBundle:Crud
+        redirect: update
+        grid: vanoix_customer_support_support
+        path: /customer-support
+        permission: true
+        vars:
+            all:
+                subheader: vanoix_customer_support.ui.support
+            index:
+                icon: map marker alternate
+    type: sylius.resource

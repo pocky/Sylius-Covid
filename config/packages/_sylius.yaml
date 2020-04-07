@@ -43,7 +43,7 @@ sylius_ui:
                     template: "@SyliusShop/Layout/Footer/Grid/_customer_care.html.twig"
                     priority: 20
                 payment_methods:
-                    enabled: false
+                    enabled: false    
             
 sylius_addressing:
     resources:
@@ -96,6 +96,7 @@ sylius_channel:
         channel:
             classes:
                 model: App\Entity\Channel\Channel
+                
 sylius_core:
     resources:
         product_image:
@@ -264,6 +265,7 @@ sylius_taxonomy:
             translation:
                 classes:
                     model: App\Entity\Taxonomy\TaxonTranslation
+                    
 sylius_user:
     resources:
         admin:

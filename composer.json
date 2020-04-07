@@ -16,6 +16,12 @@
             "name": "Community contributions"
         }
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./plugins/VanoixSyliusCustomerSupportPlugin"
+        }
+    ],
     "require": {
         "php": "^7.4",
         "friendsofsylius/sylius-import-export-plugin": "^0.18.0",
@@ -27,7 +33,8 @@
         "sylius/sylius": "~1.7.0@rc",
         "symfony/dotenv": "^4.4",
         "symfony/flex": "^1.2",
-        "tilleuls/sylius-click-n-collect-plugin": "^0.1.0"
+        "tilleuls/sylius-click-n-collect-plugin": "^0.1.0",
+        "vanoix/sylius-customer-support-plugin": "^1.0.0@dev"
     },
     "require-dev": {
         "behat/behat": "^3.6.1",

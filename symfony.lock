@@ -915,6 +915,9 @@
     "twig/twig": {
         "version": "v2.5.0"
     },
+    "vanoix/sylius-customer-support-plugin": {
+        "version": "1.0-dev"
+    },
     "webimpress/safe-writer": {
         "version": "2.0.1"
     },
