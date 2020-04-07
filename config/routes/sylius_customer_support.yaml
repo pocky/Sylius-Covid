@@ -1,0 +1,3 @@
+vanoix_sylius_customer_support_admin:
+    resource: "@VanoixSyliusCustomerSupportPlugin/Resources/config/admin_routing.yml"
+    prefix: /admin

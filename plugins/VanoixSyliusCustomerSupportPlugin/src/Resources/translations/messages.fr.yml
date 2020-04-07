@@ -1,0 +1,17 @@
+vanoix_customer_support:
+    menu:
+        admin:
+            main:
+                customer:
+                    supports: Support clients
+    ui:
+        supports: Support clients
+        support: Support clients
+        edit_support: Mettre à jour ce support
+        phoneNumber: Numéro de téléphone
+    form:
+        support:
+            channel:
+                label: Boutique
+            phoneNumber:
+                label: NUméro de téléphone
