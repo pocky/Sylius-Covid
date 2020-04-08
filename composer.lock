@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1286269a3205985715a795013342edf",
+    "content-hash": "cf3824d4cf02eff86d938e1b153575e2",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -8626,6 +8626,74 @@
             "time": "2020-03-27T16:56:45+00:00"
         },
         {
+            "name": "symfony/mailer",
+            "version": "v4.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mailer.git",
+                "reference": "449856e70ccb1c91ebd75d6fb287ffe21be9fafe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/449856e70ccb1c91ebd75d6fb287ffe21be9fafe",
+                "reference": "449856e70ccb1c91ebd75d6fb287ffe21be9fafe",
+                "shasum": ""
+            },
+            "require": {
+                "egulias/email-validator": "^2.1.10",
+                "php": "^7.1.3",
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "^4.3",
+                "symfony/mime": "^4.4|^5.0",
+                "symfony/service-contracts": "^1.1|^2"
+            },
+            "conflict": {
+                "symfony/http-kernel": "<4.4",
+                "symfony/sendgrid-mailer": "<4.4"
+            },
+            "require-dev": {
+                "symfony/amazon-mailer": "^4.4|^5.0",
+                "symfony/google-mailer": "^4.4|^5.0",
+                "symfony/http-client-contracts": "^1.1|^2",
+                "symfony/mailchimp-mailer": "^4.4|^5.0",
+                "symfony/mailgun-mailer": "^4.4|^5.0",
+                "symfony/messenger": "^4.4|^5.0",
+                "symfony/postmark-mailer": "^4.4|^5.0",
+                "symfony/sendgrid-mailer": "^4.4|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mailer\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Mailer Component",
+            "homepage": "https://symfony.com",
+            "time": "2020-03-27T16:54:36+00:00"
+        },
+        {
             "name": "symfony/mime",
             "version": "v5.0.7",
             "source": {
@@ -10691,6 +10759,81 @@
                 "templating"
             ],
             "time": "2020-02-11T15:31:23+00:00"
+        },
+        {
+            "name": "vanoix/sylius-mailer-plugin",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./plugins/VanoixSyliusMailerPlugin",
+                "reference": "86c60a664e4b41a86de758d1b58c7f9782ed83c4"
+            },
+            "require": {
+                "php": "^7.3",
+                "sylius/sylius": "^1.7",
+                "symfony/mailer": "^4.3"
+            },
+            "require-dev": {
+                "behat/behat": "^3.4",
+                "behat/mink": "^1.7@dev",
+                "behat/mink-browserkit-driver": "^1.3",
+                "behat/mink-extension": "^2.2",
+                "behat/mink-selenium2-driver": "^1.3",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/suite-settings-extension": "^1.0",
+                "friends-of-behat/symfony-extension": "^2.0",
+                "friends-of-behat/variadic-extension": "^1.1",
+                "lakion/mink-debug-extension": "^1.2.3",
+                "phpspec/phpspec": "^5.0",
+                "phpstan/phpstan-doctrine": "^0.11",
+                "phpstan/phpstan-shim": "^0.11",
+                "phpstan/phpstan-webmozart-assert": "^0.11",
+                "phpunit/phpunit": "^8.0",
+                "sensiolabs/security-checker": "^5.0",
+                "sylius-labs/coding-standard": "^3.0",
+                "symfony/browser-kit": "^3.4|^4.3",
+                "symfony/debug-bundle": "^3.4|^4.3",
+                "symfony/dotenv": "^4.3",
+                "symfony/intl": "^3.4|^4.3",
+                "symfony/web-profiler-bundle": "^3.4|^4.3",
+                "symfony/web-server-bundle": "^3.4|^4.3"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vanoix\\SyliusMailerPlugin\\": "src/",
+                    "Tests\\Vanoix\\SyliusMailerPlugin\\": "tests/"
+                }
+            },
+            "autoload-dev": {
+                "classmap": [
+                    "tests/Application/Kernel.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandre Balmes",
+                    "homepage": "https://alexandre.balmes.co"
+                },
+                {
+                    "name": "Vanoix",
+                    "email": "hello@vanoix.com"
+                }
+            ],
+            "description": "Symfony Mailer for Sylius",
+            "keywords": [
+                "mailer",
+                "sylius",
+                "sylius-plugin"
+            ]
         },
         {
             "name": "webimpress/safe-writer",
@@ -15574,7 +15717,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "sylius/sylius": 5
+        "sylius/sylius": 5,
+        "vanoix/sylius-mailer-plugin": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
