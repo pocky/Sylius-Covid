@@ -26,6 +26,7 @@ sylius_ui:
                     enabled: false
                 about_us:
                     enabled: false
+                    
         sylius.shop.layout.footer.grid:
             blocks:
                 before_legacy:
@@ -37,12 +38,19 @@ sylius_ui:
                     template: "@SyliusShop/Layout/Footer/Grid/_logo.html.twig"
                     priority: 40
                 your_store:
-                    template: "@SyliusShop/Layout/Footer/Grid/_your_store.html.twig"
-                    priority: 30
+                    enabled: false
                 customer_care:
                     template: "@SyliusShop/Layout/Footer/Grid/_customer_care.html.twig"
                     priority: 20
                 payment_methods:
+                    enabled: false
+
+        sylius.shop.checkout.sidebar:
+            blocks:
+                summary:
+                    template: "@SyliusShop/Checkout/_summary.html.twig"
+                    priority: 20
+                support:
                     enabled: false
             
 sylius_addressing:
