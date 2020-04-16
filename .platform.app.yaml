@@ -12,10 +12,19 @@ variables:
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
+        unset NPM_CONFIG_PREFIX
+        curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.2/install.sh | dash
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        nvm current
+        nvm install 12.16.2
         set -e
         yarn install
         GULP_ENV=prod yarn build
     deploy: |
+        unset NPM_CONFIG_PREFIX
+        export NVM_DIR="$PLATFORM_APP_DIR/.nvm"
+        nvm use 12.16.2
         set -e
         rm -rf var/cache/*
         mkdir -p public/media/image
@@ -48,6 +57,8 @@ mounts:
     "/var/sessions": "shared:files/sessions"
     "/public/uploads": "shared:files/uploads"
     "/public/media": "shared:files/media"
+    "/public/build": "shared:files/build"
+    "/public/bundles": "shared:files/bundles"
 
 crons:
     cleanup_cart:
