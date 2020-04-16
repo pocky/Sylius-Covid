@@ -34,6 +34,16 @@ Pimp it!
 
 __Logo__: Updates defaults logo in `assets/shop/img` directory and run `yarn encore production`
 
+Docker installation
+-------------------
+If you want to install the project with docker, simply follow these steps:
+
+```bash
+$ docker-compose up -d
+$ docker exec -it sylius-covid_php_1 bin/console sylius:install --fixture-suite=covid
+$ docker exec -it sylius-covid_nodejs_1 yarn encore production
+```
+
 # Sylius README
 
 About
