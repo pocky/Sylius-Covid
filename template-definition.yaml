@@ -1,0 +1,22 @@
+# This is the Platform.sh project initialization template.
+
+version: 1
+
+info:
+    id: sylius-covid/sylius-covid
+    name: Sylius-Covid
+    description: |
+      Créez et administrez votre boutique en ligne en deux clics avec cette édition de Sylius
+      spécialement concue pour les commerçants ayant besoin d'une solution simple et rapide à
+      mettre en place durant cette période de confinement.
+    tags:
+        - PHP
+        - Sylius
+        - E-commerce
+    image: https://demo.sylius.com/assets/shop/img/logo.png
+
+initialize:
+    repository: git://github.com/Sylius-Covid/Sylius-Covid.git@master
+    config: null
+    files: []
+    profile: PHP

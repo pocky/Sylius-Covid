@@ -8,6 +8,11 @@
 
 <p align="center">This is Sylius Covid Edition repository for starting new projects.</p>
 
+Automatic deployment
+--------------------
+<a href="https://console.platform.sh/projects/create-project/?template=https://github.com/Sylius-Covid/Sylius-Covid.git" target="_blank" title="Deploy with Platform.sh">
+    <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg">
+</a>
 
 Work In Progress!
 -----------------
