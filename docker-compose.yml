@@ -4,7 +4,7 @@ services:
   php:
     build:
       context: .
-      target: sylius_php
+      target: sylius_covid_php
       cache_from:
         - quay.io/sylius/php:latest
         - quay.io/sylius/nodejs:latest
@@ -45,7 +45,7 @@ services:
   nodejs:
     build:
       context: .
-      target: sylius_nodejs
+      target: sylius_covid_nodejs
       cache_from:
         - quay.io/sylius/php:latest
         - quay.io/sylius/nodejs:latest
@@ -66,7 +66,7 @@ services:
   nginx:
     build:
       context: .
-      target: sylius_nginx
+      target: sylius_covid_nginx
       cache_from:
         - quay.io/sylius/php:latest
         - quay.io/sylius/nodejs:latest
