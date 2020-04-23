@@ -20,9 +20,15 @@ Current Plugins:
 
 Automatic deployment
 --------------------
+<p>
 <a href="https://console.platform.sh/projects/create-project/?template=https://github.com/Sylius-Covid/Sylius-Covid.git" target="_blank" title="Deploy with Platform.sh">
     <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg">
 </a>
+</p>
+
+__SymfonyCloud__ :
+SymfonyCloud is available and preconfigured for a quick start. Clone this repository and follow the [official instructions](https://symfony.com/doc/master/cloud/getting-started.html#creating-the-project-in-the-cloud)
+
 
 Docker installation
 -------------------
