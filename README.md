@@ -8,12 +8,6 @@
 
 <p align="center">This is Sylius Covid Edition repository for starting new projects.</p>
 
-Automatic deployment
---------------------
-<a href="https://console.platform.sh/projects/create-project/?template=https://github.com/Sylius-Covid/Sylius-Covid.git" target="_blank" title="Deploy with Platform.sh">
-    <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg">
-</a>
-
 Work In Progress!
 -----------------
 
@@ -23,6 +17,22 @@ Current Plugins:
 - Customer Order Cancellation Plugin: https://sylius.com/plugin/customer-order-cancellation-plugin/
 - Click 'N' Collect : https://click-n-collect.shop/ (AGPL License)
 - Import Export Plugin : https://sylius.com/plugin/import-export/
+
+Automatic deployment
+--------------------
+<a href="https://console.platform.sh/projects/create-project/?template=https://github.com/Sylius-Covid/Sylius-Covid.git" target="_blank" title="Deploy with Platform.sh">
+    <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg">
+</a>
+
+Docker installation
+-------------------
+If you want to install the project with docker, simply follow these steps:
+
+```bash
+$ docker-compose up -d
+$ docker-compose exec php bin/console sylius:install --fixture-suite=covid
+$ docker-compose exec nodejs yarn encore production
+```
 
 First Run
 ---------
@@ -34,17 +44,8 @@ Pimp it!
 
 __Logo__: Updates defaults logo in `assets/shop/img` directory and run `yarn encore production`
 
-Docker installation
--------------------
-If you want to install the project with docker, simply follow these steps:
 
-```bash
-$ docker-compose up -d
-$ docker exec -it sylius-covid_php_1 bin/console sylius:install --fixture-suite=covid
-$ docker exec -it sylius-covid_nodejs_1 yarn encore production
-```
-
-# Sylius README
+# Official README
 
 About
 -----
