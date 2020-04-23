@@ -10608,16 +10608,16 @@
         },
         {
             "name": "tilleuls/sylius-click-n-collect-plugin",
-            "version": "v0.1.0",
+            "version": "v0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coopTilleuls/CoopTilleulsSyliusClickNCollectPlugin.git",
-                "reference": "a553edb70593d01f3c543f16aeac44500b264822"
+                "reference": "019245fcf0362457baf5afac321e555ef3507b9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coopTilleuls/CoopTilleulsSyliusClickNCollectPlugin/zipball/a553edb70593d01f3c543f16aeac44500b264822",
-                "reference": "a553edb70593d01f3c543f16aeac44500b264822",
+                "url": "https://api.github.com/repos/coopTilleuls/CoopTilleulsSyliusClickNCollectPlugin/zipball/019245fcf0362457baf5afac321e555ef3507b9c",
+                "reference": "019245fcf0362457baf5afac321e555ef3507b9c",
                 "shasum": ""
             },
             "require": {
@@ -10663,7 +10663,7 @@
                 "sylius",
                 "sylius-plugin"
             ],
-            "time": "2020-04-02T08:04:29+00:00"
+            "time": "2020-04-23T09:36:32+00:00"
         },
         {
             "name": "twig/intl-extra",
