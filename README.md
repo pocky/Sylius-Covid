@@ -18,6 +18,14 @@ Current Plugins:
 - Click 'N' Collect : https://click-n-collect.shop/ (AGPL License)
 - Import Export Plugin : https://sylius.com/plugin/import-export/
 
+Be fair!
+--------
+
+This project is Open Source and use an AGPL plugin. Show us your changes and help us to build a better web.
+
+It's also possible to help contributors with sponsoring, donations, supports and/or by purchasing service. [Send us a mail](mailto:sylius-covid@alexandre.balmes.co) if you don't know how to do that. We will happily helps you in English or French.
+
+
 Automatic deployment
 --------------------
 <p>
@@ -50,6 +58,16 @@ Pimp it!
 
 __Logo__: Updates defaults logo in `assets/shop/img` directory and run `yarn encore production`
 
+Sponsors
+--------
+
+This project was made possible thanks to the support of:
+
+<p align="center">
+
+[![Vanoix.com](https://vanoix.com/assets/vanoix125.png "Vanoix give us some time")](https://vanoix.com)
+
+</p>
 
 # Official README
 
