@@ -25,36 +25,44 @@
         "stefandoorn/sitemap-plugin": "^1.1",
         "sylius/customer-order-cancellation-plugin": "^1.1",
         "sylius/customer-reorder-plugin": "^1.1",
-        "sylius/sylius": "~1.7.0@rc",
+        "sylius/sylius": "~1.8.0",
         "symfony/dotenv": "^4.4",
-        "symfony/flex": "^1.2",
+        "symfony/flex": "^1.9",
+        "symfony/security-csrf": "^4.0",
+        "symfony/stopwatch": "^4.4",
+        "symfony/twig-bundle": "^4.4",
+        "symfony/web-profiler-bundle": "^5.0",
         "tilleuls/sylius-click-n-collect-plugin": "^0.1.0"
     },
     "require-dev": {
-        "behat/behat": "^3.6.1",
-        "behat/mink-selenium2-driver": "^1.3",
-        "friends-of-behat/mink": "^1.7",
-        "friends-of-behat/mink-browserkit-driver": "^1.3",
-        "friends-of-behat/mink-extension": "^2.2",
+        "behat/behat": "^3.7",
+        "behat/mink-selenium2-driver": "^1.4",
+        "dmore/behat-chrome-extension": "^1.3",
+        "dmore/chrome-mink-driver": "^2.7",
+        "friends-of-behat/mink": "^1.8",
+        "friends-of-behat/mink-browserkit-driver": "^1.4",
+        "friends-of-behat/mink-extension": "^2.4",
         "friends-of-behat/page-object-extension": "^0.3",
         "friends-of-behat/suite-settings-extension": "^1.0",
-        "friends-of-behat/symfony-extension": "^2.0",
-        "friends-of-behat/variadic-extension": "^1.1",
+        "friends-of-behat/symfony-extension": "^2.1",
+        "friends-of-behat/variadic-extension": "^1.3",
         "lakion/mink-debug-extension": "^1.2.3",
-        "lchrusciel/api-test-case": "^3.0",
-        "phpspec/phpspec": "^6.0",
+        "lchrusciel/api-test-case": "^5.0",
+        "phpspec/phpspec": "^6.2",
         "phpstan/extension-installer": "^1.0",
-        "phpstan/phpstan": "0.12.3",
-        "phpstan/phpstan-doctrine": "0.12.3",
-        "phpstan/phpstan-webmozart-assert": "0.12.0",
-        "phpunit/phpunit": "^7.0",
+        "phpstan/phpstan": "0.12.42",
+        "phpstan/phpstan-doctrine": "0.12.19",
+        "phpstan/phpstan-webmozart-assert": "0.12.7",
+        "phpunit/phpunit": "^8.5",
         "sensiolabs/security-checker": "^6.0",
-        "stripe/stripe-php": "^6.28",
-        "sylius-labs/coding-standard": "^3.0",
+        "stripe/stripe-php": "^6.43",
+        "sylius-labs/coding-standard": "^3.2",
         "symfony/browser-kit": "^4.4",
         "symfony/debug-bundle": "^4.4",
-        "symfony/intl": "^4.4",
-        "symfony/web-profiler-bundle": "^4.4"
+        "symfony/intl": "^4.4"
+    },
+    "conflict": {
+        "symfony/doctrine-bridge": "4.4.16"
     },
     "prefer-stable": true,
     "autoload": {
@@ -71,7 +79,8 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "security-checker security:check": "script"
         },
         "post-install-cmd": [
             "@auto-scripts"
@@ -98,7 +107,7 @@
             "allow-contrib": true
         },
         "branch-alias": {
-            "dev-master": "1.7-dev"
+            "dev-master": "1.8-dev"
         }
     }
 }
