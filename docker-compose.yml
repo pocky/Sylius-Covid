@@ -11,7 +11,7 @@ services:
     php:
         build:
             context: .
-            target: sylius_php
+            target: sylius_covid_php
             <<: *sylius-cache-from
         image: ${PHP_IMAGE:-quay.io/sylius/php}
         healthcheck:
@@ -54,7 +54,7 @@ services:
     nodejs:
         build:
             context: .
-            target: sylius_nodejs
+            target: sylius_covid_nodejs
             <<: *sylius-cache-from
         image: ${NODEJS_IMAGE:-quay.io/sylius/nodejs}
         depends_on:
@@ -72,7 +72,7 @@ services:
     nginx:
         build:
             context: .
-            target: sylius_nginx
+            target: sylius_covid_nginx
             <<: *sylius-cache-from
         image: ${NGINX_IMAGE:-quay.io/sylius/nginx}
         depends_on:
