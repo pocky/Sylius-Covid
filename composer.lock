@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f1f4d5cbfee5a2f91ee660f01dc09fe",
+    "content-hash": "b9c4a8655fd29184a52f325b697c8ace",
     "packages": [
         {
             "name": "api-platform/core",
@@ -13479,16 +13479,16 @@
         },
         {
             "name": "tilleuls/sylius-click-n-collect-plugin",
-            "version": "v0.1.6",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coopTilleuls/CoopTilleulsSyliusClickNCollectPlugin.git",
-                "reference": "ae8f8877d2eb5aa87c96102f228a041389e06b5f"
+                "reference": "3434efd83603736a015fbd66789380b4ae3e8805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coopTilleuls/CoopTilleulsSyliusClickNCollectPlugin/zipball/ae8f8877d2eb5aa87c96102f228a041389e06b5f",
-                "reference": "ae8f8877d2eb5aa87c96102f228a041389e06b5f",
+                "url": "https://api.github.com/repos/coopTilleuls/CoopTilleulsSyliusClickNCollectPlugin/zipball/3434efd83603736a015fbd66789380b4ae3e8805",
+                "reference": "3434efd83603736a015fbd66789380b4ae3e8805",
                 "shasum": ""
             },
             "require": {
@@ -13537,7 +13537,11 @@
                 "sylius",
                 "sylius-plugin"
             ],
-            "time": "2020-09-07T11:54:09+00:00"
+            "support": {
+                "issues": "https://github.com/coopTilleuls/CoopTilleulsSyliusClickNCollectPlugin/issues",
+                "source": "https://github.com/coopTilleuls/CoopTilleulsSyliusClickNCollectPlugin/tree/v0.2.0"
+            },
+            "time": "2020-10-15T13:42:03+00:00"
         },
         {
             "name": "twig/intl-extra",
@@ -19255,5 +19259,5 @@
     "platform-overrides": {
         "php": "7.4.4"
     },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
