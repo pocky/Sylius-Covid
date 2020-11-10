@@ -1,5 +1,5 @@
 {
-    "name": "sylius/sylius-standard",
+    "name": "pocky/sylius-covid",
     "description": "Starting point for projects powered by Sylius eCommerce.",
     "keywords": ["symfony", "sylius", "distribution", "ecommerce", "cart", "shopping"],
     "type": "project",
