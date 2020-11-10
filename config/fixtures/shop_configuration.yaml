@@ -34,7 +34,7 @@ sylius_fixtures:
                                 name: 'France'
                                 countries:
                                     - 'FR'
-
+                                        
                 channel:
                     options:
                         custom:
@@ -47,6 +47,7 @@ sylius_fixtures:
                                     - 'EUR'
                                 enabled: true
                                 hostname: '%env(resolve:SYLIUS_FIXTURES_HOSTNAME)%'
+                                theme_name: '%env(resolve:SYLIUS_FIXTURES_THEME_NAME)%'
                                 shop_billing_data:
                                     company: 'Sylius Covid Edition'
                                     tax_id: '0001112222'
@@ -54,6 +55,7 @@ sylius_fixtures:
                                     street: 'Test St. 15'
                                     city: 'eCommerce Town'
                                     postcode: '00 33 22'
+                                menu_taxon: 'MENU_CATEGORY'
 
                 payment_method:
                     options:
@@ -63,6 +65,7 @@ sylius_fixtures:
                                 name: 'Cash on delivery'
                                 channels:
                                     - 'FASHION_WEB'
+                                enabled: true
 
                 customer_group:
                     options:
@@ -86,16 +89,22 @@ sylius_fixtures:
                                 first_name: 'John'
                                 last_name: 'Doe'
                                 avatar: '@SyliusCoreBundle/Resources/fixtures/adminAvatars/john.jpg'
-
+                            -   email: 'api@example.com'
+                                username: 'api'
+                                password: 'sylius-api'
+                                enabled: true
+                                locale_code: '%locale%'
+                                first_name: 'Luke'
+                                last_name: 'Brushwood'
+                                api: true
+                                avatar: '@SyliusCoreBundle/Resources/fixtures/adminAvatars/luke.jpg'
+                            
                 tax_category:
                     options:
                         custom:
                             pro:
                                 code: "pro"
                                 name: "Pro"
-                            reduced:
-                                code: "reduced"
-                                name: "Reduced"
                             other:
                                 code: 'other'
                                 name: 'Other'
@@ -109,12 +118,6 @@ sylius_fixtures:
                                 zone: 'FR'
                                 category: 'pro'
                                 amount: 0.055
-                            reduced_tax:
-                                code: 'reduced_10'
-                                name: 'Reduced Tax 10%'
-                                zone: 'FR'
-                                category: 'reduced'
-                                amount: 0.01
                             default_sales_tax:
                                 code: 'sales_tax_20'
                                 name: 'Sales Tax 20%'

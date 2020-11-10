@@ -50,7 +50,6 @@ return [
     FOS\OAuthServerBundle\FOSOAuthServerBundle::class => ['all' => true],
     Sylius\Bundle\AdminApiBundle\SyliusAdminApiBundle::class => ['all' => true],
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true, 'test' => true, 'test_cached' => true],
-    Symfony\Bundle\WebProfilerBundle\WebProfilerBundle::class => ['dev' => true, 'test' => true, 'test_cached' => true],
     Fidry\AliceDataFixtures\Bridge\Symfony\FidryAliceDataFixturesBundle::class => ['dev' => true, 'test' => true, 'test_cached' => true],
     Nelmio\Alice\Bridge\Symfony\NelmioAliceBundle::class => ['dev' => true, 'test' => true, 'test_cached' => true],
     FriendsOfBehat\SymfonyExtension\Bundle\FriendsOfBehatSymfonyExtensionBundle::class => ['test' => true, 'test_cached' => true],
@@ -60,4 +59,9 @@ return [
     Sylius\CustomerReorderPlugin\SyliusCustomerReorderPlugin::class => ['all' => true],
     CoopTilleuls\SyliusClickNCollectPlugin\CoopTilleulsSyliusClickNCollectPlugin::class => ['all' => true],
     FriendsOfSylius\SyliusImportExportPlugin\FOSSyliusImportExportPlugin::class => ['all' => true],
+    Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
+    ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle::class => ['all' => true],
+    Sylius\Bundle\ApiBundle\SyliusApiBundle::class => ['all' => true],
+    SyliusLabs\DoctrineMigrationsExtraBundle\SyliusLabsDoctrineMigrationsExtraBundle::class => ['all' => true],
+    Symfony\Bundle\WebProfilerBundle\WebProfilerBundle::class => ['dev' => true, 'test' => true],
 ];
