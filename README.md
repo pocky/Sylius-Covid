@@ -17,6 +17,7 @@ Current Plugins:
 - Customer Order Cancellation Plugin: https://sylius.com/plugin/customer-order-cancellation-plugin/
 - Click 'N' Collect : https://click-n-collect.shop/ (AGPL License)
 - Import Export Plugin : https://sylius.com/plugin/import-export/
+- Seo Plugin: https://github.com/dediagency/sylius-seo-plugin
 
 Be fair!
 --------
