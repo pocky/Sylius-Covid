@@ -18,6 +18,7 @@
     ],
     "require": {
         "php": "^7.4",
+        "dedi/sylius-seo-plugin": "^0.4.0",
         "friendsofsylius/sylius-import-export-plugin": "^0.18.0",
         "platformsh/symfonyflex-bridge": "^2.2",
         "portphp/csv": "^1.1",
