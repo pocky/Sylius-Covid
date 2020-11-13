@@ -93,7 +93,7 @@ Installation
 
 ```bash
 $ wget http://getcomposer.org/composer.phar
-$ php composer.phar create-project sylius/sylius-standard project
+$ php composer.phar create-project pocky/sylius-covid project
 $ cd project
 $ yarn install
 $ yarn build
